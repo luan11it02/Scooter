@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroung"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_125"
+            android:background="@color/colorPrimary">
+
+            <ImageButton
+                android:id="@+id/btn_menu_main"
+                android:layout_width="@dimen/dp_75"
+                android:layout_height="@dimen/dp_75"
+                android:background="@color/transparent"
+                android:padding="@dimen/dp_22"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:id="@+id/btn_search_main"
+                android:layout_width="@dimen/dp_75"
+                android:layout_height="@dimen/dp_75"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:padding="@dimen/dp_17"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_search_black_24dp"
+                android:tint="@color/white"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/app_name" />
+
+
+            <TextView
+                android:id="@+id/txt_name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_50"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/txt_user"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_25"
+                android:layout_below="@+id/txt_name_user"
+                android:layout_centerHorizontal="true"
+                android:gravity="top"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_75"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_hotro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_margin="@dimen/dp_8"
+                        android:text="@string/yeu_cau_ho_tro"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/txt_hotro"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_toLeftOf="@+id/btn_hotro"
+                        android:text="@string/gui_yeu_cau_ho_tro"
+                        android:textStyle="italic"
+                        android:layout_toStartOf="@+id/btn_hotro"
+                        android:layout_marginStart="@dimen/dp_8" />
+
+                    <Button
+                        android:id="@+id/btn_hotro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/custom_button"
+                        android:text="@string/gui_yeu_cau"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_tuvan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_margin="@dimen/dp_8"
+                        android:text="@string/tu_van_sua_chua"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/txt_tuvan"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_toLeftOf="@+id/btn_tuvan"
+                        android:text="@string/gap_rac_roi_voi_xe_cua_minh"
+                        android:textStyle="italic"
+                        android:layout_toStartOf="@+id/btn_tuvan"
+                        android:layout_marginStart="@dimen/dp_8" />
+
+                    <Button
+                        android:id="@+id/btn_tuvan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/custom_button"
+                        android:text="@string/kiem_tra_loi"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                app:cardCornerRadius="@dimen/dp_4"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_tintuc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_margin="@dimen/dp_8"
+                        android:text="@string/tin_tuc_bai_viet"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/txt_tintuc"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_toLeftOf="@+id/btn_tintuc"
+                        android:text="@string/nhung_tin_tuc_bai_viet_moi_nhat"
+                        android:textStyle="italic"
+                        android:layout_toStartOf="@+id/btn_tintuc"
+                        android:layout_marginStart="@dimen/dp_8" />
+
+                    <Button
+                        android:id="@+id/btn_tintuc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/custom_button"
+                        android:text="@string/xem_them"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginRight="@dimen/dp_4"
+                    android:id="@+id/card_diadiem"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/dp_4"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_25"
+                            android:layout_margin="@dimen/dp_8"
+                            android:text="@string/dia_diem"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_8"
+                            android:text="@string/xem_huong_dan"
+                            android:textStyle="italic"
+                            android:layout_marginStart="@dimen/dp_8" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:id="@+id/card_lienhe"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/dp_4"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_25"
+                            android:layout_margin="@dimen/dp_8"
+                            android:text="@string/lien_he"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_8"
+                            android:text="@string/hotline"
+                            android:textStyle="italic"
+                            android:layout_marginStart="@dimen/dp_8" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_8"
+                        android:text="@string/quang_cao"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_180"
+                        android:layout_marginTop="@dimen/dp_4" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

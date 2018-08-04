@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:padding="@dimen/dp_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/txt_name_yeucau"
+            android:text="Nguyễn Vũ Luân"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/dp_4"
+            android:id="@+id/txt_email_sdt_yeucau"
+            android:layout_below="@+id/txt_name_yeucau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_date_yeucau"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_below="@id/txt_email_sdt_yeucau"
+            android:background="@color/black"
+            android:layout_width="200dp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/dp_8"
+            android:gravity="center"
+            android:id="@+id/txt_content_yeucau"
+            android:textColor="@color/black"
+            android:layout_below="@id/txt_email_sdt_yeucau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="@dimen/dp_4"
+            android:id="@+id/btn_delete_yeucau"
+            android:background="@color/transparent"
+            android:textColor="@color/colorAction"
+            android:text="Xóa"
+            android:layout_below="@id/txt_content_yeucau"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_32" />
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>
